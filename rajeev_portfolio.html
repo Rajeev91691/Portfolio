@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Rajeev Nandan Damarla - Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<body>
+    <header id="top">
+        <h1>Rajeev Nandan Damarla</h1>
+        <p>A simple portfolio built using fundamental HTML.</p>
+        <nav>
+            <a href="#education">Education</a> | <a href="#projects">Projects</a> | <a href="#social">Contact</a>
+        </nav>
+    </header>
+
+    <div style="max-width: 1100px; margin: auto; padding: 20px;">
+        <div align="center" class="card">
+            <img src="photos/20250908_115202.jpg" class="profile-pic" width="160" height="160" alt="Profile">
+            <p><strong>Contact:</strong> rajeevndandan382@gmail.com | +91 9481509488</p>
+        </div>
+
+        <section id="education">
+            <h2 style="color:var(--primary); border-left: 5px solid var(--accent); padding-left: 15px;">Education & Skills</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div class="card" style="flex: 1; min-width: 320px;">
+                    <h3>Education</h3>
+                    <p><strong>GITAM, Visakhapatnam</strong><br>Bachelor of Technology in CSE<br>Cumulative **GPA: 9.18/10**</p>
+                </div>
+                <div class="card" style="flex: 1; min-width: 320px;">
+                    <h3>Technical Skills</h3>
+                    <ul type="square">
+                        <li>Python, C, HTML, CSS, JavaScript</li>
+                        <li>SQL (MySQL, Oracle SQL, Microsoft SQL Server, SQLite)</li>
+                        <li>AI/ML: Diffusion Models, LLMs, Deep Learning Frameworks</li>
+                        <li>Tools: Anaconda, Jupyter, VS Code, Google Colab, Git/GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 style="color:var(--primary); border-left: 5px solid var(--accent); padding-left: 15px;">Projects & Experience</h2>
+            
+            <div class="card">
+                <h4>Generative AI Internship (IIT Kanpur)</h4>
+                <p>Completed a hands-on internship focusing on Generative AI. Gained practical experience in Diffusion Models, LLMs, and model fine-tuning. Developed and tested generative AI pipelines, improving output quality and inference efficiency.</p>
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:4913a4f8-1ead-4529-8ef8-c829b7aa3078" target="_blank">View Internship Documentation</a>
+            </div>
+
+            <div class="card" cellspacing="20">
+                <h4>Image Generation using Diffusion Model - Research Project</h4>
+                <p>Built an AI Image Generator using diffusion models that transforms text prompts into realistic, high-quality images. Successfully deployed the system with an interactive interface.</p>
+                <div align="center">
+                    <img src="photos/Screenshot 2025-12-12 233723.png" width="500" height="300" border="1">
+                    <img src="photos/gen img.jpg" width="500" height="300" border="1">
+                </div>
+                <p align="center"><a href="https://huggingface.co/spaces/Rajeev91691/image-gen" target="_blank">Visit: AI Image Generator (Hugging Face)</a></p>
+            </div>
+
+            <div class="card">
+                <h4>Industry Insight GPT - Research Project</h4>
+                <p>Built IndustryInsightGPT, an industry-focused LLM using Hugging Face. Integrated FAISS/ChromaDB for semantic search and knowledge retrieval. Designed a scalable pipeline for PDF ingestion.</p>
+                <div align="center">
+                    <img src="photos/industrygpt.png" width="48%">
+                    <img src="photos/igpt output.png" width="48%">
+                </div>
+                <p align="center"><a href="https://huggingface.co/spaces/Rajeev91691/genai-assistant" target="_blank">Visit: IndustryInsightGPT (Hugging Face)</a></p>
+            </div>
+
+            <div class="card">
+                <h4>Object Detection Model</h4>
+                <p>A specific implementation of an Object Detection model, deployed on Hugging Face Spaces.</p>
+                <div align="center">
+                    <img src="photos/obj det.png" width="48%">
+                    <img src="photos/image.webp" width="48%">
+                </div>
+                <p align="center"><a href="https://huggingface.co/spaces/Rajeev91691/Object-Detection" target="_blank">Visit: Object Detection (Hugging Face)</a></p>
+            </div>
+        </section>
+
+        <section id="social">
+            <h2 style="color:var(--primary); border-left: 5px solid var(--accent); padding-left: 15px;">Social Media & Work Samples</h2>
+            <div class="card" style="display: flex; gap: 40px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rajeev-nandan-damarla/" target="_blank">Professional Profile</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/Rajeev91691" target="_blank">Code Repositories</a></li>
+                        <li><strong>Hugging Face:</strong> <a href="https://huggingface.co/Rajeev91691" target="_blank">ML Profile</a></li>
+                        <li><strong>Certifications:</strong> <a href="https://github.com/Rajeev91691/Certifications" target="_blank">View Certs</a></li>
+                    </ul>
+                </div>
+                <div style="flex: 1.5; min-width: 300px;">
+                    <form action="contact.html">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Rajeev Nandan Damarla. All Rights Reserved.</p>
+        <a href="#top" style="color:#ffcc00; text-decoration: none;">Back to Top</a>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

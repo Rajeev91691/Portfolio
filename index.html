@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Login</title><link rel="stylesheet" href="style.css"></head>
+<body>
+    <div style="max-width: 420px; margin: 120px auto;" class="card">
+        <h2 align="center" style="color:var(--primary)"><u>Login</u></h2>
+        <form action="rajeev_portfolio.html">
+            <div style="margin-bottom: 15px;">
+                <label><b>LoginId (Gmail):</b></label>
+                <input type="email" pattern=".+@gmail\.com" required 
+                       oninvalid="this.setCustomValidity('Please enter a valid Gmail address (e.g., user@gmail.com)')" 
+                       oninput="this.setCustomValidity('')" placeholder="example@gmail.com">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label><b>Password:</b></label>
+                <input type="password" required>
+            </div>
+            <div align="center">
+                <button type="submit">Submit</button>
+                <button type="reset" style="background: #777; margin-left: 10px;">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
